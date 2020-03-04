@@ -83,9 +83,11 @@
 送出用PCから外部のサーバへSSH接続する。YouTubeLiveへ，外部のサーバを経由して送出されるようにする。
 
 ### 外部に立てる必要のあるサーバ
-- SSH接続ができるサーバ
+- SSH接続ができ，ffmpegを動かせるサーバ
     - **役割：送出用PCとYouTubeLiveの間を中継する。疑似VPNのような手法**
     - **`80` or `443`ポートでSSHサーバがホストできること(`22`はNG)**
+    - ffmpegによって，送出用PCとYouTubeLiveサーバ間を中継する
+    - [Download FFmpeg](https://www.ffmpeg.org/download.html)
 
 ### 手順
 1. 送出用PCにて，TeraTermで外部のサーバへSSH接続する(プロキシ指定忘れずに)
